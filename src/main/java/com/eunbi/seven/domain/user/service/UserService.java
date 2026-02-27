@@ -4,7 +4,6 @@ import com.eunbi.seven.domain.user.dto.UserRequestDTO;
 import com.eunbi.seven.domain.user.entity.UserEntity;
 import com.eunbi.seven.domain.user.entity.UserRole;
 import com.eunbi.seven.domain.user.repository.UserRepository;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
