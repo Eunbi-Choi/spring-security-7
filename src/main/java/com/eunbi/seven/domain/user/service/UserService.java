@@ -4,6 +4,7 @@ import com.eunbi.seven.domain.user.dto.UserRequestDTO;
 import com.eunbi.seven.domain.user.entity.UserEntity;
 import com.eunbi.seven.domain.user.entity.UserRole;
 import com.eunbi.seven.domain.user.repository.UserRepository;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -45,4 +46,13 @@ public class UserService implements UserDetailsService {
                 .roles(entity.getRole().name())
                 .build();
     }
+
+//    public boolean authCheck(Long postId) {
+//        String username = SecurityContextHolder.getContext()
+//                .getAuthentication()
+//                .getName();
+//
+//        return postRepository.existsIdAndUsernameCustom(postId, username);
+//    }
+
 }

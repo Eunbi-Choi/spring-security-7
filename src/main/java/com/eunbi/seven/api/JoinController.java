@@ -1,4 +1,4 @@
-package com.eunbi.seven.domain.user.controller;
+package com.eunbi.seven.api;
 
 import com.eunbi.seven.domain.user.dto.UserRequestDTO;
 import com.eunbi.seven.domain.user.service.UserService;
